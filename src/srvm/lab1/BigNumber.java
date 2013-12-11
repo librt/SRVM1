@@ -24,4 +24,8 @@ public class BigNumber {
         this(size);
         this.numbers[0] = number;
     }
+
+    public int size() {
+        return this.numbers.length;
+    }
 }
