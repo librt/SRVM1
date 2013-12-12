@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a256a1d4-d8f3-4152-a1a2-96cbb5ab264b" name="Default" comment="Добавлены тесты">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/JBehave_Story_Runner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/srvm/lab1/SimpleJBehave.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/srvm/lab1/big_number_init.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/srvm/lab1/BigNumberInit.java" afterPath="$PROJECT_DIR$/tests/srvm/lab1/BigNumberInit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_jbehave_jbehave_maven_plugin_3_7_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_jbehave_jbehave_maven_plugin_3_7_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/srvm/lab1/big_number_init.story" afterPath="$PROJECT_DIR$/tests/srvm/lab1/big_number_init.story" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SRVM1.iws" />
@@ -91,19 +87,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleJBehave.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SimpleJBehave.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/SimpleJBehave.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="48" selection-start="68" selection-end="68" vertical-scroll-proportion="-1.8333334" vertical-offset="692" max-vertical-offset="1242">
+            <state line="2" column="48" selection-start="68" selection-end="68" vertical-scroll-proportion="24.538462" vertical-offset="692" max-vertical-offset="1242">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="big_number_init.story" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="big_number_init.story" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/big_number_init.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+            <state line="6" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.41860464" vertical-offset="0" max-vertical-offset="432">
               <folding />
             </state>
           </provider>
@@ -128,9 +124,9 @@
         <option value="$PROJECT_DIR$/tests/srvm/lab1/BigNumberTest.java" />
         <option value="$PROJECT_DIR$/tests/srvm/lab1/SimbleJBehave.java" />
         <option value="$PROJECT_DIR$/tests/srvm/lab1/BigNumberInitSteps.java" />
-        <option value="$PROJECT_DIR$/tests/srvm/lab1/big_number_init.story" />
         <option value="$PROJECT_DIR$/tests/srvm/lab1/BigNumberInit.java" />
         <option value="$PROJECT_DIR$/tests/srvm/lab1/SimpleJBehave.java" />
+        <option value="$PROJECT_DIR$/tests/srvm/lab1/big_number_init.story" />
       </list>
     </option>
   </component>
@@ -511,7 +507,15 @@
       <created>1386827474286</created>
       <updated>1386827474286</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Добавлены тесты">
+      <created>1386876421657</created>
+      <updated>1386876421657</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Добавлены тесты&#10;">
+      <created>1386876539243</created>
+      <updated>1386876539243</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -581,7 +585,8 @@
     <MESSAGE value="Созданы тесты" />
     <MESSAGE value="Добавлена поддержка JBehave" />
     <MESSAGE value="Добавлены тесты" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлены тесты" />
+    <MESSAGE value="Добавлены тесты&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены тесты&#10;" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -752,13 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/big_number_init.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/BigNumberInit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="12" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="864">
@@ -770,7 +768,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/SimpleJBehave.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="48" selection-start="68" selection-end="68" vertical-scroll-proportion="-1.8333334" vertical-offset="692" max-vertical-offset="1242">
+        <state line="2" column="48" selection-start="68" selection-end="68" vertical-scroll-proportion="24.538462" vertical-offset="692" max-vertical-offset="1242">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/big_number_init.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.41860464" vertical-offset="0" max-vertical-offset="432">
           <folding />
         </state>
       </provider>
