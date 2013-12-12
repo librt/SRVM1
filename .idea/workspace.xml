@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a256a1d4-d8f3-4152-a1a2-96cbb5ab264b" name="Default" comment="Добавлены тесты">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/srvm/lab1/big_number_init.story" afterPath="$PROJECT_DIR$/tests/srvm/lab1/big_number_init.story" />
+    <list default="true" id="a256a1d4-d8f3-4152-a1a2-96cbb5ab264b" name="Default" comment="Добавлено больше информации в story">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/srvm/lab1/BigNumber.java" afterPath="$PROJECT_DIR$/src/srvm/lab1/BigNumber.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/srvm/lab1/SimpleJBehave.java" afterPath="$PROJECT_DIR$/tests/srvm/lab1/SimpleJBehave.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_jbehave_jbehave_maven_plugin_3_7_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_jbehave_jbehave_maven_plugin_3_7_5.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SRVM1.iws" />
@@ -67,10 +70,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BigNumber.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="BigNumber.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/srvm/lab1/BigNumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="14" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" vertical-offset="297" max-vertical-offset="999">
+            <state line="4" column="64" selection-start="129" selection-end="129" vertical-scroll-proportion="0.18274112" vertical-offset="0" max-vertical-offset="999">
               <folding />
             </state>
           </provider>
@@ -79,10 +82,8 @@
       <file leaf-file-name="BigNumberInit.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/BigNumberInit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="12" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="864">
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state line="22" column="12" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="945">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,16 +91,18 @@
       <file leaf-file-name="SimpleJBehave.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/SimpleJBehave.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="48" selection-start="68" selection-end="68" vertical-scroll-proportion="24.538462" vertical-offset="692" max-vertical-offset="1242">
-              <folding />
+            <state line="46" column="42" selection-start="1712" selection-end="1712" vertical-scroll-proportion="0.0" vertical-offset="1046" max-vertical-offset="1836">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="big_number_init.story" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="big_number_init.story" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/big_number_init.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.41860464" vertical-offset="0" max-vertical-offset="432">
+            <state line="6" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="432">
               <folding />
             </state>
           </provider>
@@ -119,16 +122,23 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/srvm/lab1/BigNumberInit.story" />
-        <option value="$PROJECT_DIR$/src/srvm/lab1/BigNumber.java" />
         <option value="$PROJECT_DIR$/src/srvm/lab1/BigNumberTest.java" />
         <option value="$PROJECT_DIR$/tests/srvm/lab1/BigNumberTest.java" />
         <option value="$PROJECT_DIR$/tests/srvm/lab1/SimbleJBehave.java" />
         <option value="$PROJECT_DIR$/tests/srvm/lab1/BigNumberInitSteps.java" />
         <option value="$PROJECT_DIR$/tests/srvm/lab1/BigNumberInit.java" />
-        <option value="$PROJECT_DIR$/tests/srvm/lab1/SimpleJBehave.java" />
         <option value="$PROJECT_DIR$/tests/srvm/lab1/big_number_init.story" />
+        <option value="$PROJECT_DIR$/src/srvm/lab1/pom.xml" />
+        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
+        <option value="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+        <option value="$PROJECT_DIR$/tests/srvm/lab1/SimpleJBehave.java" />
+        <option value="$PROJECT_DIR$/.idea/libraries/org_jbehave_jbehave_maven_plugin_3_7_5.xml" />
+        <option value="$PROJECT_DIR$/src/srvm/lab1/BigNumber.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -193,6 +203,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -254,7 +265,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,11 +296,14 @@
     <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="srvm.lab1" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="srvm.lab1" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pti08\IdeaProjects\SRVM1\src\srvm\lab1" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.SimpleJBehave">
@@ -515,7 +528,11 @@
       <created>1386876539243</created>
       <updated>1386876539243</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Добавлено больше информации в story">
+      <created>1386876639850</created>
+      <updated>1386876639850</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -549,13 +566,12 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41951218" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44390243" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3284553" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20770393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -563,6 +579,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -586,7 +603,8 @@
     <MESSAGE value="Добавлена поддержка JBehave" />
     <MESSAGE value="Добавлены тесты" />
     <MESSAGE value="Добавлены тесты&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлены тесты&#10;" />
+    <MESSAGE value="Добавлено больше информации в story" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлено больше информации в story" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -600,6 +618,36 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/srvm/lab1/BigNumber.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="14" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" vertical-offset="297" max-vertical-offset="999">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/BigNumberInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="12" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="945">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/SimpleJBehave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="42" selection-start="1712" selection-end="1712" vertical-scroll-proportion="0.0" vertical-offset="1127" max-vertical-offset="1917">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/big_number_init.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/srvm/lab1/BigNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="14" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="999">
           <folding />
         </state>
@@ -608,16 +656,16 @@
     <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/BigNumberInit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="21" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="945">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/SimpleJBehave.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="80" column="0" selection-start="3432" selection-end="3432" vertical-scroll-proportion="0.0" vertical-offset="2160" max-vertical-offset="2403">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -638,16 +686,16 @@
     <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/BigNumberInit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="21" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="945">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/SimpleJBehave.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="80" column="0" selection-start="3432" selection-end="3432" vertical-scroll-proportion="0.0" vertical-offset="2160" max-vertical-offset="2403">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -668,16 +716,16 @@
     <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/BigNumberInit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="21" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="945">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/SimpleJBehave.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="80" column="0" selection-start="3432" selection-end="3432" vertical-scroll-proportion="0.0" vertical-offset="2160" max-vertical-offset="2403">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -691,9 +739,7 @@
     <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/BigNumberInit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="432">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -707,9 +753,7 @@
     <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/BigNumberInit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="270">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -723,9 +767,7 @@
     <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/BigNumberInit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="26" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" vertical-offset="81" max-vertical-offset="297">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -736,46 +778,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/srvm/lab1/BigNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="14" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" vertical-offset="297" max-vertical-offset="999">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/jbehave-core-3.7.5.jar!/org/jbehave/core/junit/JUnitStories.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="450" selection-end="450" vertical-scroll-proportion="1.069307" vertical-offset="0" max-vertical-offset="486">
-          <folding />
-        </state>
+        <state line="13" column="0" selection-start="450" selection-end="450" vertical-scroll-proportion="1.069307" vertical-offset="0" max-vertical-offset="486" />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.ideaLibSources/jbehave-core-3.7.5-sources.jar!/org/jbehave/core/junit/JUnitStories.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="22" selection-start="317" selection-end="317" vertical-scroll-proportion="-0.46864685" vertical-offset="385" max-vertical-offset="783">
-          <folding />
-        </state>
+        <state line="13" column="22" selection-start="317" selection-end="317" vertical-scroll-proportion="-0.46864685" vertical-offset="385" max-vertical-offset="783" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/BigNumberInit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="12" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="864">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/SimpleJBehave.java">
+    <entry file="jar://$PROJECT_DIR$/lib/jbehave-core-3.7.5.jar!/ftl/sh.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="48" selection-start="68" selection-end="68" vertical-scroll-proportion="24.538462" vertical-offset="692" max-vertical-offset="1242">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="729" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/runConfigurations/JBehave_Story_Runner.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="567">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/big_number_init.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.41860464" vertical-offset="0" max-vertical-offset="432">
+        <state line="6" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="27297">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="14" selection-start="8781" selection-end="8781" vertical-scroll-proportion="10.871287" vertical-offset="0" max-vertical-offset="3483">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/project-template.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="316">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="303">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="11" selection-start="226" selection-end="226" vertical-scroll-proportion="-0.9651899" vertical-offset="467" max-vertical-offset="783">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/description.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="303">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/scopes/scope_settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="316" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/org_jbehave_jbehave_maven_plugin_3_7_5.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="12" selection-start="2650" selection-end="2650" vertical-scroll-proportion="3.7425742" vertical-offset="0" max-vertical-offset="1296">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/srvm/lab1/SimpleJBehave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="42" selection-start="1712" selection-end="1712" vertical-scroll-proportion="0.0" vertical-offset="1046" max-vertical-offset="1836">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/srvm/lab1/BigNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="64" selection-start="129" selection-end="129" vertical-scroll-proportion="0.18274112" vertical-offset="0" max-vertical-offset="999">
           <folding />
         </state>
       </provider>

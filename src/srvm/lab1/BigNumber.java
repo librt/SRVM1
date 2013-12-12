@@ -2,7 +2,7 @@ package srvm.lab1;
 
 public class BigNumber {
     long[] numbers;
-    static public final int DEFAULT_SIZE = 256 / Long.SIZE;
+    static public final int DEFAULT_SIZE = 256 / (Long.SIZE * 8);
 
     public BigNumber(int size) {
         this.numbers = new long[size];

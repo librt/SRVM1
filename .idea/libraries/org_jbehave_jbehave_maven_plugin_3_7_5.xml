@@ -38,7 +38,6 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/lib/jbehave-maven-plugin-3.7.5-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.ideaLibSources/jbehave-core-3.7.5-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
