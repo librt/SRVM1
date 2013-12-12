@@ -1,6 +1,5 @@
 package srvm.lab1;
 
-import org.apache.maven.plugin.MojoExecutionException;
 import org.jbehave.core.configuration.Configuration;
 import org.jbehave.core.configuration.Keywords;
 import org.jbehave.core.configuration.MostUsefulConfiguration;
@@ -8,7 +7,6 @@ import org.jbehave.core.junit.JUnitStories;
 import org.jbehave.core.reporters.*;
 import org.jbehave.core.steps.InjectableStepsFactory;
 import org.jbehave.core.steps.InstanceStepsFactory;
-import org.jbehave.mojo.UnpackViewResources;
 
 import java.io.File;
 import java.util.Arrays;
@@ -38,14 +36,6 @@ public class SimpleJBehave extends JUnitStories {
         configuration.useStoryReporterBuilder(storyReporterBuilder);
         configuration.useViewGenerator(new FreemarkerViewGenerator());
 
-        //configuredEmbedder().useConfiguration(configuration);
-
-        try {
-            UnpackViewResources unpackViewResources = new UnpackViewResources();
-            unpackViewResources.execute();
-        } catch (MojoExecutionException e) {
-            e.printStackTrace();
-        }
         return configuration;
     }
 
