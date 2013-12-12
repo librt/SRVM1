@@ -17,6 +17,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="org.jbehave:jbehave-maven-plugin:3.7.5" level="project" />
   </component>
 </module>
 
