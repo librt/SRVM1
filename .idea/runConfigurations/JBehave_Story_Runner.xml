@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="JBehave Story Runner" type="intellijbehave.storyrunner" factoryName="JBehave Story Runner">
+    <option name="MAIN_CLASS_NAME" value="srvm.lab1.SimpleJBehave" />
+    <option name="VM_PARAMETERS" />
+    <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/tests/srvm/lab1/big_number_init.story" />
+    <option name="WORKING_DIRECTORY" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <option name="ENABLE_SWING_INSPECTOR" value="false" />
+    <option name="ENV_VARIABLES" />
+    <option name="PASS_PARENT_ENVS" value="true" />
+    <module name="SRVM1" />
+    <envs />
+    <method />
+  </configuration>
+</component>
