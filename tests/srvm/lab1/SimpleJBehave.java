@@ -1,14 +1,15 @@
 package srvm.lab1;
 
 import org.jbehave.core.configuration.Configuration;
-import org.jbehave.core.configuration.Keywords;
 import org.jbehave.core.configuration.MostUsefulConfiguration;
 import org.jbehave.core.junit.JUnitStories;
-import org.jbehave.core.reporters.*;
+import org.jbehave.core.reporters.CrossReference;
+import org.jbehave.core.reporters.Format;
+import org.jbehave.core.reporters.FreemarkerViewGenerator;
+import org.jbehave.core.reporters.StoryReporterBuilder;
 import org.jbehave.core.steps.InjectableStepsFactory;
 import org.jbehave.core.steps.InstanceStepsFactory;
 
-import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 
@@ -20,17 +21,7 @@ public class SimpleJBehave extends JUnitStories {
 
     @Override
     public Configuration configuration() {
-        StoryReporterBuilder storyReporterBuilder = new StoryReporterBuilder() {
-            @Override
-            public StoryReporter reporterFor(String storyPath, Format format) {
-                switch (format) {
-                    case HTML:
-                        return new HtmlTemplateOutput(new File("out.html"), new Keywords());
-                    default:
-                        return super.reporterFor(storyPath, format);
-                }
-            }
-        };
+        StoryReporterBuilder storyReporterBuilder = new StoryReporterBuilder();
         storyReporterBuilder.withFormats(Format.CONSOLE, Format.HTML).withCrossReference(new CrossReference());
         Configuration configuration = new MostUsefulConfiguration();
         configuration.useStoryReporterBuilder(storyReporterBuilder);

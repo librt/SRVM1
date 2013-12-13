@@ -1,29 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
-    <file url="file://$PROJECT_DIR$/lib/jbehave-3.8" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lib/jbehave-3.8/archetypes" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lib/jbehave-3.8/archetypes/jbehave-groovy-archetype" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lib/jbehave-3.8/archetypes/jbehave-guice-archetype" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lib/jbehave-3.8/archetypes/jbehave-pico-archetype" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lib/jbehave-3.8/archetypes/jbehave-simple-archetype" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lib/jbehave-3.8/archetypes/jbehave-spring-archetype" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lib/jbehave-3.8/distribution" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lib/jbehave-3.8/jbehave-ant" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lib/jbehave-3.8/jbehave-core" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lib/jbehave-3.8/jbehave-gherkin" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lib/jbehave-3.8/jbehave-google" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lib/jbehave-3.8/jbehave-groovy" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lib/jbehave-3.8/jbehave-guice" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lib/jbehave-3.8/jbehave-hudson-plugin" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lib/jbehave-3.8/jbehave-jenkins-plugin" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lib/jbehave-3.8/jbehave-maven-plugin" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lib/jbehave-3.8/jbehave-navigator" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lib/jbehave-3.8/jbehave-odf" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lib/jbehave-3.8/jbehave-pico" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lib/jbehave-3.8/jbehave-scala" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lib/jbehave-3.8/jbehave-spring" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lib/jbehave-3.8/jbehave-weld" charset="UTF-8" />
-  </component>
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
 </project>
 
