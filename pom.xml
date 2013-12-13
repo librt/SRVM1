@@ -32,7 +32,6 @@
 
     <build>
         <plugins>
-            <!-- Unpack view resources, defined as dependencies -->
             <plugin>
                 <groupId>org.jbehave</groupId>
                 <artifactId>jbehave-maven-plugin</artifactId>
