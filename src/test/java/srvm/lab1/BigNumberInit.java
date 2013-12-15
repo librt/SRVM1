@@ -6,7 +6,7 @@ public class BigNumberInit {
     BigNumber a;
 
     @Given("a big number with value $value and size $size")
-    public void givenBigNumberWithSize(@Named("long") long value, @Named("size") int size) {
+    public void givenBigNumberWithValueAndSize(@Named("long") long value, @Named("size") int size) {
         a = new BigNumber(value, size);
     }
 

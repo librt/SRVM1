@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a256a1d4-d8f3-4152-a1a2-96cbb5ab264b" name="Default" comment="Удалён конструктор с указанием размера из-за неоднозначности (может быть путаница с конструктором присваивания маленького числа типа long)">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/srvm/lab1/BigNumber.java" afterPath="$PROJECT_DIR$/src/main/java/srvm/lab1/BigNumber.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java" afterPath="$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/srvm/lab1/SimpleJBehave.java" afterPath="$PROJECT_DIR$/src/test/java/srvm/lab1/SimpleJBehave.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_init.story" afterPath="$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_init.story" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -78,16 +76,16 @@
       <file leaf-file-name="BigNumber.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/srvm/lab1/BigNumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="35" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0" vertical-offset="194" max-vertical-offset="1431">
+            <state line="14" column="11" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0" vertical-offset="291" max-vertical-offset="1431">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BigNumberInit.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BigNumberInit.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="33" selection-start="293" selection-end="293" vertical-scroll-proportion="0.6330275" vertical-offset="36" max-vertical-offset="972">
+            <state line="10" column="5" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="972">
               <folding />
             </state>
           </provider>
@@ -96,16 +94,16 @@
       <file leaf-file-name="SimpleJBehave.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/SimpleJBehave.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="5" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="1026">
+            <state line="42" column="5" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1026">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="big_number_init.story" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="big_number_init.story" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_init.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="35" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0" vertical-offset="81" max-vertical-offset="540">
+            <state line="22" column="24" selection-start="485" selection-end="485" vertical-scroll-proportion="0.7361111" vertical-offset="329" max-vertical-offset="810">
               <folding />
             </state>
           </provider>
@@ -152,8 +150,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/lab1/SimpleJBehave.java" />
         <option value="$PROJECT_DIR$/src/test/java/srvm/lab1/SimpleJBehave.java" />
         <option value="$PROJECT_DIR$/src/main/java/srvm/lab1/BigNumber.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_init.story" />
         <option value="$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_init.story" />
       </list>
     </option>
   </component>
@@ -604,7 +602,11 @@
       <created>1386955244178</created>
       <updated>1386955244178</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Удалён конструктор с указанием размера из-за неоднозначности (может быть путаница с конструктором присваивания маленького числа типа long)">
+      <created>1387131858762</created>
+      <updated>1387131858762</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -629,7 +631,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -648,7 +650,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20770393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40487805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37235773" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -988,21 +990,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/srvm/lab1/BigNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="35" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0" vertical-offset="194" max-vertical-offset="1431">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="17" selection-start="1138" selection-end="1138" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1512">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_init.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="35" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0" vertical-offset="81" max-vertical-offset="540">
+        <state line="14" column="11" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0" vertical-offset="291" max-vertical-offset="1431">
           <folding />
         </state>
       </provider>
@@ -1016,7 +1004,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="33" selection-start="293" selection-end="293" vertical-scroll-proportion="0.6330275" vertical-offset="36" max-vertical-offset="972">
+        <state line="10" column="5" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="17" selection-start="1138" selection-end="1138" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1512">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_init.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="24" selection-start="485" selection-end="485" vertical-scroll-proportion="0.7361111" vertical-offset="329" max-vertical-offset="810">
           <folding />
         </state>
       </provider>
