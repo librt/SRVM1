@@ -1,7 +1,5 @@
 package srvm.lab1;
 
-import java.util.logging.Logger;
-
 public class BigNumber {
     long[] numbers;
     static public final int DEFAULT_SIZE = 256 / Long.SIZE;
@@ -19,11 +17,9 @@ public class BigNumber {
     }
 
     public BigNumber(long number, int size) {
-        Logger.getAnonymousLogger().info("number " + number + "; size " + size);
+        if (size < 1) throw new IllegalArgumentException();
         this.numbers = new long[size];
-        Logger.getAnonymousLogger().info("success...");
         this.numbers[0] = number;
-        Logger.getAnonymousLogger().info("success!");
     }
 
     public int size() {
