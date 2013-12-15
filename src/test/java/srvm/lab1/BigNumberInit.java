@@ -5,9 +5,14 @@ import org.jbehave.core.annotations.*;
 public class BigNumberInit {
     BigNumber a;
 
-    @Given("a big number with value $value and size $size")
-    public void givenBigNumberWithValueAndSize(@Named("long") long value, @Named("size") int size) {
+    @Given("a big number with size $size and value $value")
+    public void givenBigNumberWithSizeAndValue(@Named("value") long value, @Named("size") int size) {
         a = new BigNumber(value, size);
+    }
+
+    @Given("a big number with value $value")
+    public void givenBigNumberWithValue(@Named("value") long value) {
+        a = new BigNumber(value);
     }
 
     @When("I do nothing")

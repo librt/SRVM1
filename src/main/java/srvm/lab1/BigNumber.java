@@ -1,15 +1,17 @@
 package srvm.lab1;
 
+import java.util.logging.Logger;
+
 public class BigNumber {
     long[] numbers;
-    static public final int DEFAULT_SIZE = 256 / (Long.SIZE * 8);
+    static public final int DEFAULT_SIZE = 256 / Long.SIZE;
 
     public BigNumber(long[] numbers) {
         this.numbers = numbers;
     }
 
     public BigNumber() {
-        this(DEFAULT_SIZE);
+        this(0, DEFAULT_SIZE);
     }
 
     public BigNumber(long number) {
@@ -17,8 +19,11 @@ public class BigNumber {
     }
 
     public BigNumber(long number, int size) {
+        Logger.getAnonymousLogger().info("number " + number + "; size " + size);
         this.numbers = new long[size];
+        Logger.getAnonymousLogger().info("success...");
         this.numbers[0] = number;
+        Logger.getAnonymousLogger().info("success!");
     }
 
     public int size() {
@@ -27,8 +32,8 @@ public class BigNumber {
 
     @Override
     public String toString() {
-        int i = size() - 1;
-        for (; i >= 0; i--) {
+        int i;
+        for (i = size() - 1; i >= 0; i--) {
             if (numbers[i] != 0)
                 break;
         }
