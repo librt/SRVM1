@@ -28,3 +28,11 @@ Scenario: blank BigNumber initialization with default size
 Given a big number with value 0
 When nothing is happened
 Then big number should be 0
+Scenario: blank BigNumber initialization from minimal array
+Given a big number from array 0
+Then big number size should be 1
+Then big number should be 0
+Scenario: blank BigNumber initialization from array
+Given a big number from array 0,0,0
+Then big number size should be 3
+Then big number should be 0

@@ -3,6 +3,8 @@ package srvm.lab1;
 import junit.framework.Assert;
 import org.jbehave.core.annotations.*;
 
+import java.util.List;
+
 public class BigNumberInit {
     BigNumber a;
 
@@ -33,6 +35,16 @@ public class BigNumberInit {
         }
     }
 
+    @Given("a big number from array $numbers")
+    public void givenBigNumberFromArray(@Named("numbers") List<Long> numbers) {
+        a = null;
+        Long[] arr = new Long[numbers.size()];
+        for (int i = 0; i < numbers.size(); i++) {
+            arr[i] = numbers.get(i);
+        }
+        a = new BigNumber(arr);
+    }
+
     @When("I do nothing")
     @Alias("nothing is happened")
     public void whenNothingIsHappened() {
@@ -52,5 +64,4 @@ public class BigNumberInit {
     public void thenBigNumberShouldBe(@Named("number") String number) {
         Assert.assertEquals(a.toString(), number);
     }
-
 }

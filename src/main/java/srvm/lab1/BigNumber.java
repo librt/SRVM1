@@ -8,6 +8,13 @@ public class BigNumber {
         this.numbers = numbers;
     }
 
+    public BigNumber(Long[] numbers) {
+        this.numbers = new long[numbers.length];
+        for (int i = 0; i < numbers.length; i++) {
+            this.numbers[i] = numbers[i];
+        }
+    }
+
     public BigNumber() {
         this(0, DEFAULT_SIZE);
     }
