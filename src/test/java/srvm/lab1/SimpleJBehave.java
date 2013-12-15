@@ -2,6 +2,7 @@ package srvm.lab1;
 
 import org.jbehave.core.configuration.Configuration;
 import org.jbehave.core.configuration.MostUsefulConfiguration;
+import org.jbehave.core.io.StoryFinder;
 import org.jbehave.core.junit.JUnitStories;
 import org.jbehave.core.reporters.CrossReference;
 import org.jbehave.core.reporters.Format;
@@ -10,8 +11,9 @@ import org.jbehave.core.reporters.StoryReporterBuilder;
 import org.jbehave.core.steps.InjectableStepsFactory;
 import org.jbehave.core.steps.InstanceStepsFactory;
 
-import java.util.Arrays;
 import java.util.List;
+
+import static org.jbehave.core.io.CodeLocations.codeLocationFromClass;
 
 public class SimpleJBehave extends JUnitStories {
 
@@ -37,7 +39,7 @@ public class SimpleJBehave extends JUnitStories {
 
     @Override
     protected List<String> storyPaths() {
-        return Arrays.asList("srvm/lab1/big_number_init.story");
+        return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()).getPath(), "**/*.story", "");
     }
 
 }

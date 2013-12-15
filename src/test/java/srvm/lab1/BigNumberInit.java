@@ -1,16 +1,18 @@
 package srvm.lab1;
 
-import org.jbehave.core.annotations.Given;
-import org.jbehave.core.annotations.Named;
-import org.jbehave.core.annotations.Pending;
-import org.jbehave.core.annotations.Then;
+import org.jbehave.core.annotations.*;
 
 public class BigNumberInit {
     BigNumber a;
 
-    @Given("a big number with size $size")
-    public void givenBigNumberWithSize(@Named("size") int size) {
-        a = new BigNumber(size);
+    @Given("a big number with value $value and size $size")
+    public void givenBigNumberWithSize(@Named("long") long value, @Named("size") int size) {
+        a = new BigNumber(value, size);
+    }
+
+    @When("I do nothing")
+    @Alias("nothing is happened")
+    public void whenNothingIsHappened() {
     }
 
     @Then("big number size should be $size")
@@ -20,7 +22,6 @@ public class BigNumberInit {
     }
 
     @Then("big number should be $number")
-    @Pending
     public void thenBigNumberShouldBe(@Named("number") String number) {
         if (!a.toString().equals(number))
             throw new RuntimeException("big number is " + a.toString() + ", but should be " + number);
