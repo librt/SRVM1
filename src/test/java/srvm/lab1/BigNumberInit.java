@@ -35,8 +35,9 @@ public class BigNumberInit {
         }
     }
 
-    @Given("a big number from array $numbers")
-    public void givenBigNumberFromArray(@Named("numbers") List<Long> numbers) {
+    @Given("a big number from array $array")
+    @Alias("a big number from array <array>")
+    public void givenBigNumberFromArray(@Named("array") List<Long> numbers) {
         a = null;
         Long[] arr = new Long[numbers.size()];
         for (int i = 0; i < numbers.size(); i++) {
@@ -45,8 +46,9 @@ public class BigNumberInit {
         a = new BigNumber(arr);
     }
 
-    @Given("a big number from string $number")
-    public void givenBigNumberFromString(@Named("number") String number) {
+    @Given("a big number from string $string")
+    @Alias("a big number from string <string>")
+    public void givenBigNumberFromString(@Named("string") String number) {
         a = null;
         a = new BigNumber(number);
     }
@@ -57,6 +59,7 @@ public class BigNumberInit {
     }
 
     @Then("big number size should be $size")
+    @Alias("big number size should be <size>")
     public void thenSizeShouldBe(@Named("size") int size) {
         Assert.assertEquals(a.size(), size);
     }

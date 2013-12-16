@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a256a1d4-d8f3-4152-a1a2-96cbb5ab264b" name="Default" comment="Добавлены тесты создания большого числа на основе массива">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/srvm/lab1/BigNumber.java" afterPath="$PROJECT_DIR$/src/main/java/srvm/lab1/BigNumber.java" />
+    <list default="true" id="a256a1d4-d8f3-4152-a1a2-96cbb5ab264b" name="Default" comment="Добавлена функция fromString, добавлены тесты для проверки её корректности">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java" afterPath="$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_init.story" afterPath="$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_init.story" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -77,10 +76,10 @@
       <file leaf-file-name="BigNumber.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/srvm/lab1/BigNumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="97" selection-start="2391" selection-end="2391" vertical-scroll-proportion="0.0" vertical-offset="2211" max-vertical-offset="2889">
+            <state line="86" column="103" selection-start="2398" selection-end="2398" vertical-scroll-proportion="0.0" vertical-offset="2211" max-vertical-offset="2889">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1883#1892#0" expanded="true" />
+                <element signature="e#1884#1893#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,7 +88,7 @@
       <file leaf-file-name="BigNumberInit.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="38" selection-start="1605" selection-end="1605" vertical-scroll-proportion="0.0" vertical-offset="966" max-vertical-offset="2052">
+            <state line="34" column="9" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.0" vertical-offset="966" max-vertical-offset="2133">
               <folding />
             </state>
           </provider>
@@ -107,7 +106,7 @@
       <file leaf-file-name="big_number_init.story" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_init.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="60" selection-start="1795" selection-end="1795" vertical-scroll-proportion="0.62184876" vertical-offset="1128" max-vertical-offset="1593">
+            <state line="19" column="3" selection-start="315" selection-end="315" vertical-scroll-proportion="0.6864865" vertical-offset="259" max-vertical-offset="1458">
               <folding />
             </state>
           </provider>
@@ -153,8 +152,8 @@
         <option value="$PROJECT_DIR$/tests/srvm/lab1/SimpleJBehave.java" />
         <option value="$PROJECT_DIR$/src/main/resources/lab1/SimpleJBehave.java" />
         <option value="$PROJECT_DIR$/src/test/java/srvm/lab1/SimpleJBehave.java" />
-        <option value="$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java" />
         <option value="$PROJECT_DIR$/src/main/java/srvm/lab1/BigNumber.java" />
+        <option value="$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java" />
         <option value="$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_init.story" />
       </list>
     </option>
@@ -647,7 +646,11 @@
       <created>1387141662098</created>
       <updated>1387141662098</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Добавлена функция fromString, добавлены тесты для проверки её корректности">
+      <created>1387222556661</created>
+      <updated>1387222556661</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -729,7 +732,8 @@
     <MESSAGE value="Добавлены тесты. Найдена и устранена проблема: Long.SIZE -- размер в битах, а не байтах и умножать его на 8 не надо. Поэтому 256/(Long.SIZE*8) давало 256/(64*8)=256/512=0, что вело за собой создания массива длиной 0 по умолчанию" />
     <MESSAGE value="Добавлены тесты для проверки корректности конструктора" />
     <MESSAGE value="Добавлены тесты создания большого числа на основе массива" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлены тесты создания большого числа на основе массива" />
+    <MESSAGE value="Добавлена функция fromString, добавлены тесты для проверки её корректности" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена функция fromString, добавлены тесты для проверки её корректности" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -760,7 +764,7 @@
         <state line="4" column="64" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="999">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1883#1892#0" expanded="true" />
+            <element signature="e#1884#1893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -784,7 +788,7 @@
         <state line="2" column="14" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" vertical-offset="297" max-vertical-offset="999">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1883#1892#0" expanded="true" />
+            <element signature="e#1884#1893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -808,7 +812,7 @@
         <state line="2" column="14" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="999">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1883#1892#0" expanded="true" />
+            <element signature="e#1884#1893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -832,7 +836,7 @@
         <state line="2" column="14" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" vertical-offset="297" max-vertical-offset="999">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1883#1892#0" expanded="true" />
+            <element signature="e#1884#1893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -856,7 +860,7 @@
         <state line="2" column="14" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="999">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1883#1892#0" expanded="true" />
+            <element signature="e#1884#1893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -880,7 +884,7 @@
         <state line="2" column="14" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" vertical-offset="297" max-vertical-offset="999">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1883#1892#0" expanded="true" />
+            <element signature="e#1884#1893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -897,7 +901,7 @@
         <state line="2" column="14" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="999">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1883#1892#0" expanded="true" />
+            <element signature="e#1884#1893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -914,7 +918,7 @@
         <state line="2" column="14" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="999">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1883#1892#0" expanded="true" />
+            <element signature="e#1884#1893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -931,7 +935,7 @@
         <state line="25" column="5" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="891">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1883#1892#0" expanded="true" />
+            <element signature="e#1884#1893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1060,26 +1064,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/SimpleJBehave.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="5" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1026">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="38" selection-start="1605" selection-end="1605" vertical-scroll-proportion="0.0" vertical-offset="966" max-vertical-offset="2052">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/srvm/lab1/BigNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="97" selection-start="2391" selection-end="2391" vertical-scroll-proportion="0.0" vertical-offset="2211" max-vertical-offset="2889">
+        <state line="86" column="103" selection-start="2398" selection-end="2398" vertical-scroll-proportion="0.0" vertical-offset="2211" max-vertical-offset="2889">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1883#1892#0" expanded="true" />
+            <element signature="e#1884#1893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1091,9 +1081,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/SimpleJBehave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="5" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1026">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="9" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.0" vertical-offset="966" max-vertical-offset="2133">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_init.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="60" selection-start="1795" selection-end="1795" vertical-scroll-proportion="0.62184876" vertical-offset="1128" max-vertical-offset="1593">
+        <state line="19" column="3" selection-start="315" selection-end="315" vertical-scroll-proportion="0.6864865" vertical-offset="259" max-vertical-offset="1458">
           <folding />
         </state>
       </provider>
