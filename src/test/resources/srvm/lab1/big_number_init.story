@@ -36,3 +36,19 @@ Scenario: blank BigNumber initialization from array
 Given a big number from array 0,0,0
 Then big number size should be 3
 Then big number should be 0
+Scenario: blank BigNumber initialization from string
+Given a big number from string 0
+Then big number should be 0
+Then big number size should be 1
+Scenario: blank BigNumber initialization from string with 16 digits (for one Long)
+Given a big number from string 0000000000000000
+Then big number should be 0
+Then big number size should be 1
+Scenario: blank BigNumber initialization from string with 17 digits (two Long)
+Given a big number from string 00000000000000000
+Then big number should be 0
+Then big number size should be 2
+Scenario: blank BigNumber initialization from string with 64 digits (four Long)
+Given a big number from string 0000000000000000000000000000000000000000000000000000000000000000
+Then big number should be 0
+Then big number size should be 4

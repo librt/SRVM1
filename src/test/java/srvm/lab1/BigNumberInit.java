@@ -45,6 +45,12 @@ public class BigNumberInit {
         a = new BigNumber(arr);
     }
 
+    @Given("a big number from string $number")
+    public void givenBigNumberFromString(@Named("number") String number) {
+        a = null;
+        a = new BigNumber(number);
+    }
+
     @When("I do nothing")
     @Alias("nothing is happened")
     public void whenNothingIsHappened() {
