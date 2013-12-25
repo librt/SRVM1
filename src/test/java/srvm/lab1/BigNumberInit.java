@@ -68,6 +68,13 @@ public class BigNumberInit {
         a = new BigNumber(number);
     }
 
+    @Given("a big number $value")
+    @Alias("a big number <value>")
+    public void givenBigNumber(@Named("value") BigNumber value) {
+        a = null;
+        a = value;
+    }
+
     @When("I do nothing")
     @Alias("nothing is happened")
     public void whenNothingIsHappened() {

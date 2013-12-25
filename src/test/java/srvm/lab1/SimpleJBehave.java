@@ -29,6 +29,8 @@ public class SimpleJBehave extends JUnitStories {
         configuration.useStoryReporterBuilder(storyReporterBuilder);
         configuration.useViewGenerator(new FreemarkerViewGenerator());
 
+        configuration.parameterConverters().addConverters(new BigNumberConverter());
+
         return configuration;
     }
 
