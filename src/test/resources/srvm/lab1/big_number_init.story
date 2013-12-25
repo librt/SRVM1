@@ -27,7 +27,8 @@ Then big number should not be initialized
 Scenario: blank BigNumber initialization with default size
 Given a big number with value 0
 When nothing is happened
-Then big number should be 0
+Then big number size should be default
+And big number should be 0
 Scenario: blank BigNumber initialization from array
 Given a big number from array <array>
 Then big number size should be <size>
@@ -47,3 +48,15 @@ Examples:
 |00000000000000000|2|
 |0000000000000000000000000000000000000000000000000000000000000000|4|
 |00000000000000000000000000000000000000000000000000000000000000000|5|
+Scenario: wrong BigNumber from string
+Given wrong big number from string <string>
+Then big number should not be initialized
+Examples:
+|string|
+|-|
+|-1|
+|-0|
+|#$|
+|0!%|
+|(@0|
+|000$000|

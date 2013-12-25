@@ -25,7 +25,22 @@ public class BigNumberInit {
         try {
             a = null;
             a = new BigNumber(value, size);
-            throw new RuntimeException("Constructor should fail with size " + size + " and value " + value + " but it didn't");
+            throw new RuntimeException("Constructor should fail with size " + size + " and value " + value + ", but it didn't");
+        } catch (IllegalArgumentException ignored) {
+        } catch (RuntimeException e) {
+            throw e;
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new RuntimeException("IllegalArgumentException expected but " + e + " is thrown");
+        }
+    }
+
+    @Given("wrong big number from string <string>")
+    public void givenWrongBigNumberFromString(@Named("string") String value) {
+        try {
+            a = null;
+            a = new BigNumber(value);
+            throw new RuntimeException("Constructor should fail with string " + value + ", but it didn't");
         } catch (IllegalArgumentException ignored) {
         } catch (RuntimeException e) {
             throw e;
@@ -61,7 +76,12 @@ public class BigNumberInit {
     @Then("big number size should be $size")
     @Alias("big number size should be <size>")
     public void thenSizeShouldBe(@Named("size") int size) {
-        Assert.assertEquals(a.size(), size);
+        Assert.assertEquals(size, a.size());
+    }
+
+    @Then(value = "big number size should be default", priority = 1)
+    @Composite(steps = {"Then big number size should be " + BigNumber.DEFAULT_SIZE})
+    public void thenSizeShouldBe() {
     }
 
     @Then("big number should not be initialized")
@@ -71,6 +91,6 @@ public class BigNumberInit {
 
     @Then("big number should be $number")
     public void thenBigNumberShouldBe(@Named("number") String number) {
-        Assert.assertEquals(a.toString(), number);
+        Assert.assertEquals(number, a.toString());
     }
 }

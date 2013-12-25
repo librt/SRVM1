@@ -8,6 +8,7 @@ public class BigNumber {
     static public final int DEFAULT_SIZE = 256 / Long.SIZE;
 
     public BigNumber(long[] numbers) {
+        if (numbers.length < 1) throw new IllegalArgumentException();
         this.numbers = numbers;
     }
 
@@ -74,6 +75,9 @@ public class BigNumber {
 
     static public long[] stringToLongArray(String input, int base) {
         ArrayList<Integer> availableBases = new ArrayList<Integer>(Arrays.asList(2, 8, 16));
+        if (input.contains("-")) {
+            throw new IllegalArgumentException("The number should be positive or 0, but '-' found");
+        }
         if (!availableBases.contains(base)) {
             throw new IllegalArgumentException("The base should be one of " + availableBases + " but " + base + " is given");
         }
