@@ -35,7 +35,6 @@ public class BinaryArithmetic {
     }
 
     public static BigNumber shiftLeft(BigNumber a, int shift) {
-        // TODO: доделать
         BigNumber result = new BigNumber(a);
         int bigShifts = shift / Long.SIZE;
         int shortShifts = shift % Long.SIZE;
@@ -47,7 +46,7 @@ public class BinaryArithmetic {
         }
         if (shortShifts > 0) {
             result.numbers[0] <<= shortShifts;
-            for (int i = 0; i < result.size(); i++) {
+            for (int i = 1; i < result.size(); i++) {
                 result.numbers[i] = (a.numbers[i] << shortShifts) | (a.numbers[i - 1] >> (Long.SIZE - shortShifts));
             }
         }
@@ -59,6 +58,25 @@ public class BinaryArithmetic {
         result.numbers[result.size() - 1] >>= 1;
         for (int i = a.size() - 2; i >= 0; i--) {
             result.numbers[i] = a.numbers[i] >> 1 | (a.numbers[i + 1] & 1);
+        }
+        return result;
+    }
+
+    public static BigNumber shiftRight(BigNumber a, int shift) {
+        BigNumber result = new BigNumber(a);
+        int bigShifts = shift / Long.SIZE;
+        int shortShifts = shift % Long.SIZE;
+        if (bigShifts > 0) {
+            for (int i = 0; i < bigShifts; i++) {
+                result.numbers[result.size() - i] = 0;
+            }
+            System.arraycopy(a.numbers, 0, result.numbers, bigShifts, result.size() - bigShifts);
+        }
+        if (shortShifts > 0) {
+            result.numbers[result.size() - 1] >>= shortShifts;
+            for (int i = 0; i < result.size() - 1; i++) {
+                result.numbers[i] = (a.numbers[i] >> shortShifts) | ((a.numbers[i + 1] << (Long.SIZE - shortShifts)) >> (Long.SIZE - shortShifts));
+            }
         }
         return result;
     }
