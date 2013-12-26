@@ -41,7 +41,14 @@ public class BinaryArithmetic {
         int shortShifts = shift % Long.SIZE;
         if (bigShifts > 0) {
             for (int i = 0; i < bigShifts; i++) {
-
+                result.numbers[i] = 0;
+            }
+            System.arraycopy(a.numbers, 0, result.numbers, bigShifts, result.size() - bigShifts);
+        }
+        if (shortShifts > 0) {
+            result.numbers[0] <<= shortShifts;
+            for (int i = 0; i < result.size(); i++) {
+                result.numbers[i] = (a.numbers[i] << shortShifts) | (a.numbers[i - 1] >> (Long.SIZE - shortShifts));
             }
         }
         return result;
