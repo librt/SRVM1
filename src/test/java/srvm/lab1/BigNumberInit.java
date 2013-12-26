@@ -8,23 +8,30 @@ import java.util.List;
 public class BigNumberInit {
     BigNumber a;
 
+    @BeforeScenario
+    public void beforeEveryScenario() {
+        a = null;
+    }
+
+    @AfterScenario
+    public void afterEveryScenario() {
+        a = null;
+    }
+
     @Given("a big number with size <size> and value <value>")
     @Alias("a big number with size $size and value $value")
     public void givenBigNumberWithSizeAndValue(@Named("value") long value, @Named("size") int size) {
-        a = null;
         a = new BigNumber(value, size);
     }
 
     @Given("a big number with value $value")
     public void givenBigNumberWithValue(@Named("value") long value) {
-        a = null;
         a = new BigNumber(value);
     }
 
     @Given("wrong big number with size $size and value $value")
     public void givenWrongBigNumberWithSizeAndValue(@Named("value") long value, @Named("size") int size) {
         try {
-            a = null;
             a = new BigNumber(value, size);
             throw new RuntimeException("Constructor should fail with size " + size + " and value " + value + ", but it didn't");
         } catch (IllegalArgumentException ignored) {
@@ -39,7 +46,6 @@ public class BigNumberInit {
     @Given("wrong big number from string <string>")
     public void givenWrongBigNumberFromString(@Named("string") String value) {
         try {
-            a = null;
             a = new BigNumber(value);
             throw new RuntimeException("Constructor should fail with string " + value + ", but it didn't");
         } catch (IllegalArgumentException ignored) {
@@ -54,7 +60,6 @@ public class BigNumberInit {
     @Given("a big number from array $array")
     @Alias("a big number from array <array>")
     public void givenBigNumberFromArray(@Named("array") List<Long> numbers) {
-        a = null;
         Long[] arr = new Long[numbers.size()];
         for (int i = 0; i < numbers.size(); i++) {
             arr[i] = numbers.get(i);
@@ -65,14 +70,12 @@ public class BigNumberInit {
     @Given("a big number from string $string")
     @Alias("a big number from string <string>")
     public void givenBigNumberFromString(@Named("string") String number) {
-        a = null;
         a = new BigNumber(number);
     }
 
     @Given("a big number $value")
     @Alias("a big number <value>")
     public void givenBigNumber(@Named("value") BigNumber value) {
-        a = null;
         a = value;
     }
 
