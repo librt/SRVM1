@@ -8,66 +8,33 @@ As a librt
 I want to perform a BigNumber basic actions
 So that I can achieve further actions
 
-Scenario: blank BigNumber initialization
-Given a big number with size <size> and value 0
+Scenario: BigNumber initialization
+Given a big number with size <size> and value <value>
 Then big number size should be <size>
-And big number should be 0
+And big number should be <number>
 Examples:
-|size|
-|1|
-|2|
-|10|
-|64|
-Scenario: blank BigNumber initialization with negative size
-Given wrong big number with size -1 and value 0
-Then big number should not be initialized
-Scenario: blank BigNumber initialization without size
-Given wrong big number with size 0 and value 0
-Then big number should not be initialized
-Scenario: blank BigNumber initialization with default size
-Given a big number with value 0
-When nothing is happened
-Then big number size should be default
-And big number should be 0
-Scenario: blank BigNumber initialization from array
+|size|value|number|
+|1|1|1|
+|2|1|1|
+|10|1|1|
+|64|1|1|
+Scenario: BigNumber initialization from array
 Given a big number from array <array>
 Then big number size should be <size>
-And big number should be 0
+And big number should be <number>
 Examples:
-|array|size|
-|0|1|
-|0,0,0|3|
-Scenario: blank BigNumber initialization from string
+|array|size|number|
+|1|1|1|
+|1,0,0|3|1|
+|1,0,1|3|100000000000000000000000000000001|
+Scenario: BigNumber initialization from string
 Given a big number from string <string>
-Then big number should be 0
+Then big number should be <number>
 And big number size should be <size>
 Examples:
-|string|size|
-|0|1|
-|0000000000000000|1|
-|00000000000000000|2|
-|0000000000000000000000000000000000000000000000000000000000000000|4|
-|00000000000000000000000000000000000000000000000000000000000000000|5|
-Scenario: wrong BigNumber from string
-Given wrong big number from string <string>
-Then big number should not be initialized
-Examples:
-|string|
-|-|
-|-1|
-|-0|
-|#$|
-|0!%|
-|(@0|
-|000$000|
-Scenario: Testing BigNumber converter
-Given a big number <value>
-Then big number should be 0
-And big number size should be <size>
-Examples:
-|value|size|
-|0|1|
-|0000000000000000|1|
-|00000000000000000|2|
-|0000000000000000000000000000000000000000000000000000000000000000|4|
-|00000000000000000000000000000000000000000000000000000000000000000|5|
+|string|size|number|
+|1|1|1|
+|0000000100000000|1|100000000|
+|00e0000000000000f|2|E0000000000000F|
+|1000000100000000000000000000000000000000000fE0000000000000000001|4|1000000100000000000000000000000000000000000FE0000000000000000001|
+|f0000000000000000000000000000000000000000000000000000000000000000|5|F0000000000000000000000000000000000000000000000000000000000000000|

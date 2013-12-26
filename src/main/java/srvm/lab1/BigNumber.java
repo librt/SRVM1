@@ -58,7 +58,7 @@ public class BigNumber {
         i--;
         if (i == -1)
             return result;
-        String longFormat = String.format("%%0%dX", Long.SIZE / 16);
+        String longFormat = String.format("%%0%dX", Long.SIZE / 4);
         for (; i >= 0; i--) {
             result += String.format(longFormat, numbers[i]);
         }
@@ -99,6 +99,9 @@ public class BigNumber {
             result[i] |= Long.parseLong(input.substring(0, input.length() % BASE_SIZE / 2), base) << Long.SIZE / 2;
         } else if (input.length() % BASE_SIZE > 0) {
             result[i] = Long.parseLong(input.substring(0, input.length() % BASE_SIZE), base);
+        } else {
+            result[i] = Long.parseLong(input.substring(input.length() - i * BASE_SIZE - BASE_SIZE / 2, input.length() - i * BASE_SIZE), base);
+            result[i] |= (Long.parseLong(input.substring(input.length() - (i + 1) * BASE_SIZE, input.length() - i * BASE_SIZE - BASE_SIZE / 2), base)) << Long.SIZE / 2;
         }
         return result;
     }

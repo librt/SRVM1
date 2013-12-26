@@ -8,7 +8,8 @@ import java.util.List;
 public class BigNumberInit {
     BigNumber a;
 
-    @Given("a big number with size $size and value $value")
+    @Given("a big number with size <size> and value <value>")
+    @Alias("a big number with size $size and value $value")
     public void givenBigNumberWithSizeAndValue(@Named("value") long value, @Named("size") int size) {
         a = null;
         a = new BigNumber(value, size);
@@ -97,6 +98,7 @@ public class BigNumberInit {
     }
 
     @Then("big number should be $number")
+    @Alias("big number should be <number>")
     public void thenBigNumberShouldBe(@Named("number") String number) {
         Assert.assertEquals(number, a.toString());
     }
