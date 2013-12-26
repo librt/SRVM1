@@ -41,6 +41,18 @@ public class BigNumber {
         this.numbers[0] = number;
     }
 
+    public BigNumber(BigNumber bigNumber) {
+        this.numbers = new long[bigNumber.size()];
+        System.arraycopy(bigNumber.numbers, 0, this.numbers, 0, size());
+    }
+
+    @Override
+    protected Object clone() {
+        long[] array = new long[size()];
+        System.arraycopy(numbers, 0, array, 0, size());
+        return new BigNumber(array);
+    }
+
     public int size() {
         return this.numbers.length;
     }
