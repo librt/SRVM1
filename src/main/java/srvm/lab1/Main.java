@@ -25,5 +25,7 @@ public class Main {
         System.out.println("1 << " + Long.SIZE + " = " + a.toString());
         b = or(a, c);
         System.out.println("10000000000000000 | 1 = " + b.toString());
+        b = shiftLeft(c, 4);
+        System.out.println("1 << 4 = " + b.toString());
     }
 }
