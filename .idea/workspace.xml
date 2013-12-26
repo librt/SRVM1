@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a256a1d4-d8f3-4152-a1a2-96cbb5ab264b" name="Default" comment="Задани #4 решено">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/srvm/lab1/BinaryArithmetic.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_init.story" afterPath="$PROJECT_DIR$/src/test/resources/srvm/lab1/blank_big_number_init.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/srvm/lab1/BigNumber.java" afterPath="$PROJECT_DIR$/src/main/java/srvm/lab1/BigNumber.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java" afterPath="$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_init.story" afterPath="$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_init.story" />
+    <list default="true" id="a256a1d4-d8f3-4152-a1a2-96cbb5ab264b" name="Default" comment="Добавлены тесты на инициализацию ненулевых чисел">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SRVM1.iws" />
@@ -399,6 +394,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
+    <property name="LayoutCode.rearrangeEntries" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -731,7 +727,11 @@
       <created>1387992104476</created>
       <updated>1387992104476</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Добавлены тесты на инициализацию ненулевых чисел">
+      <created>1388060857452</created>
+      <updated>1388060857452</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -817,7 +817,8 @@
     <MESSAGE value="Введена параметризация тестов с помощью таблиц (Issue #3)" />
     <MESSAGE value="Добавлены тесты на ввод неправильных чисел (отрицательных или с лишними символами)" />
     <MESSAGE value="Задани #4 решено" />
-    <option name="LAST_COMMIT_MESSAGE" value="Задани #4 решено" />
+    <MESSAGE value="Добавлены тесты на инициализацию ненулевых чисел" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены тесты на инициализацию ненулевых чисел" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
