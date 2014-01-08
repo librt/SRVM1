@@ -36,7 +36,7 @@ public class SimpleJBehave extends JUnitStories {
 
     @Override
     public InjectableStepsFactory stepsFactory() {
-        return new InstanceStepsFactory(configuration(), new BigNumberInit());
+        return new InstanceStepsFactory(configuration(), new BigNumberInit(), new BigNumberBinaryArithmetic());
     }
 
     @Override
