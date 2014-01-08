@@ -53,6 +53,46 @@ public class BigNumber {
         return new BigNumber(array);
     }
 
+    public void resize(int size) {
+        if (size < 1) throw new IllegalArgumentException();
+        if (size == this.size()) return;
+        long array[] = new long[size];
+        System.arraycopy(this.numbers, 0, array, 0, this.size() < size ? this.size() : size);
+        this.numbers = array;
+    }
+
+    public void crop() {
+        int i;
+        for (i = this.numbers.length - 1; i >= 0; i--)
+            if (this.numbers[i] != 0) break;
+        this.resize(i + 1);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj.getClass() == this.getClass()) {
+            int i;
+            int minSize = ((BigNumber) obj).size() < this.size() ? ((BigNumber) obj).size() : this.size();
+            int maxSize = ((BigNumber) obj).size() > this.size() ? ((BigNumber) obj).size() : this.size();
+            for (i = 0; i < minSize; i++) {
+                if (this.numbers[i] != ((BigNumber) obj).numbers[i])
+                    return false;
+            }
+            if (((BigNumber) obj).size() > this.size()) {
+                for (; i < maxSize; i++)
+                    if (((BigNumber) obj).numbers[i] != 0)
+                        return false;
+            } else {
+                for (; i < maxSize; i++)
+                    if (this.numbers[i] != 0)
+                        return false;
+            }
+            return true;
+        } else {
+            return super.equals(obj);
+        }
+    }
+
     public int size() {
         return this.numbers.length;
     }
