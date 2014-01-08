@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a256a1d4-d8f3-4152-a1a2-96cbb5ab264b" name="Default" comment="Дополнена функия Main">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberBinaryArithmetic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_binary_arithmetic.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/srvm/lab1/SimpleJBehave.java" afterPath="$PROJECT_DIR$/src/test/java/srvm/lab1/SimpleJBehave.java" />
+    <list default="true" id="a256a1d4-d8f3-4152-a1a2-96cbb5ab264b" name="Default" comment="Добавлены тесты бинарной арифметики">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SRVM1.iws" />
@@ -115,10 +112,8 @@
       <file leaf-file-name="BigNumberBinaryArithmetic.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberBinaryArithmetic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="1350">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="31" column="0" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0" vertical-offset="383" max-vertical-offset="1296">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -782,7 +777,11 @@
       <created>1389203701606</created>
       <updated>1389203701606</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Добавлены тесты бинарной арифметики">
+      <created>1389203760189</created>
+      <updated>1389203760189</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -846,7 +845,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Добавлены тесты&#10;" />
     <MESSAGE value="Добавлено больше информации в story" />
     <MESSAGE value="Исправлена ошибка с начальным размером BigNumber" />
     <MESSAGE value="Убран лишний код" />
@@ -871,7 +869,8 @@
     <MESSAGE value="Добавлены побрякушки в функцию Main" />
     <MESSAGE value="Дополнена функия Main" />
     <MESSAGE value="Расширена общая функциональность" />
-    <option name="LAST_COMMIT_MESSAGE" value="Расширена общая функциональность" />
+    <MESSAGE value="Добавлены тесты бинарной арифметики" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены тесты бинарной арифметики" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1190,10 +1189,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberBinaryArithmetic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="1350">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="31" column="0" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0" vertical-offset="383" max-vertical-offset="1296">
+          <folding />
         </state>
       </provider>
     </entry>
