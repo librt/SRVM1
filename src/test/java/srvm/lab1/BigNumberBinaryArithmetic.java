@@ -26,6 +26,11 @@ public class BigNumberBinaryArithmetic {
         this.b = b;
     }
 
+    @Given("big number <a>")
+    public void givenBigNumber(@Named("a") BigNumber a) {
+        this.a = a;
+    }
+
     @Then("a and b is <c>")
     public void thenAnd(@Named("c") BigNumber c) {
         Assert.assertEquals(and(a, b), c);
@@ -50,5 +55,20 @@ public class BigNumberBinaryArithmetic {
         newA = xor(newA, newB);
         Assert.assertEquals(newA, b);
         Assert.assertEquals(newB, a);
+    }
+
+    @When("big number is shifted left <shift> times")
+    public void whenShiftedLeft(@Named("shift") int shift) {
+        a = shiftLeft(a, shift);
+    }
+
+    @When("big number is shifted right <shift> times")
+    public void whenShiftedRight(@Named("shift") int shift) {
+        a = shiftRight(a, shift);
+    }
+
+    @Then("big number is <result>")
+    public void thenBigNumber(@Named("result") BigNumber result) {
+        Assert.assertEquals(this.a, result);
     }
 }
