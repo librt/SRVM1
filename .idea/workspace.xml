@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a256a1d4-d8f3-4152-a1a2-96cbb5ab264b" name="Default" comment="Добавлены тесты бинарной арифметики">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberBinaryArithmetic.java" afterPath="$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberBinaryArithmetic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/srvm/lab1/BinaryArithmetic.java" afterPath="$PROJECT_DIR$/src/main/java/srvm/lab1/BinaryArithmetic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_binary_arithmetic.story" afterPath="$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_binary_arithmetic.story" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SRVM1.iws" />
@@ -80,10 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinaryArithmetic.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BinaryArithmetic.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/srvm/lab1/BinaryArithmetic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="0" selection-start="1823" selection-end="1823" vertical-scroll-proportion="0.0" vertical-offset="1458" max-vertical-offset="2403">
+            <state line="31" column="31" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="2646">
               <folding />
             </state>
           </provider>
@@ -102,18 +105,18 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="6" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="2020" max-vertical-offset="2997">
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BigNumberBinaryArithmetic.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="BigNumberBinaryArithmetic.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberBinaryArithmetic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0" vertical-offset="383" max-vertical-offset="1296">
-              <folding />
+            <state line="44" column="20" selection-start="999" selection-end="999" vertical-scroll-proportion="0.37532133" vertical-offset="1042" max-vertical-offset="1593">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,7 +124,7 @@
       <file leaf-file-name="big_number_binary_arithmetic.story" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_binary_arithmetic.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="7" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+            <state line="15" column="8" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0" vertical-offset="355" max-vertical-offset="864">
               <folding />
             </state>
           </provider>
@@ -162,13 +165,13 @@
         <option value="$PROJECT_DIR$/src/test/resources/srvm/lab1/blank_big_number_init.story" />
         <option value="$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_init.story" />
         <option value="$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java" />
-        <option value="$PROJECT_DIR$/src/main/java/srvm/lab1/BinaryArithmetic.java" />
         <option value="$PROJECT_DIR$/src/main/java/srvm/lab1/Main.java" />
         <option value="$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberBinaryArithmetics.java" />
         <option value="$PROJECT_DIR$/src/test/java/srvm/lab1/SimpleJBehave.java" />
+        <option value="$PROJECT_DIR$/src/main/java/srvm/lab1/BigNumber.java" />
+        <option value="$PROJECT_DIR$/src/main/java/srvm/lab1/BinaryArithmetic.java" />
         <option value="$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_binary_arithmetic.story" />
         <option value="$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberBinaryArithmetic.java" />
-        <option value="$PROJECT_DIR$/src/main/java/srvm/lab1/BigNumber.java" />
       </list>
     </option>
   </component>
@@ -781,7 +784,11 @@
       <created>1389203760189</created>
       <updated>1389203760189</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Добавлены тесты бинарной арифметики">
+      <created>1389203768283</created>
+      <updated>1389203768283</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -825,7 +832,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19410875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4601626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30406505" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -892,9 +899,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="12" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="945">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -915,9 +920,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="21" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="945">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -938,9 +941,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="21" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="945">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -961,9 +962,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="21" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="945">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -984,9 +983,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="432">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1000,9 +997,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="270">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1016,9 +1011,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="26" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" vertical-offset="81" max-vertical-offset="297">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1171,25 +1164,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_binary_arithmetic.story">
+    <entry file="file://$PROJECT_DIR$/src/main/java/srvm/lab1/BigNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="7" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="283" max-vertical-offset="2997">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberBinaryArithmetic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0" vertical-offset="383" max-vertical-offset="1296">
+        <state line="80" column="57" selection-start="2423" selection-end="2423" vertical-scroll-proportion="0.0" vertical-offset="2446" max-vertical-offset="4455">
           <folding />
         </state>
       </provider>
@@ -1201,17 +1178,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/srvm/lab1/BigNumber.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="57" selection-start="2423" selection-end="2423" vertical-scroll-proportion="0.0" vertical-offset="2446" max-vertical-offset="4455">
+        <state line="6" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="283" max-vertical-offset="2997">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/srvm/lab1/BinaryArithmetic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="1823" selection-end="1823" vertical-scroll-proportion="0.0" vertical-offset="1431" max-vertical-offset="2403">
+        <state line="31" column="31" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="2646">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_binary_arithmetic.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="8" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0" vertical-offset="355" max-vertical-offset="864">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberBinaryArithmetic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="20" selection-start="999" selection-end="999" vertical-scroll-proportion="0.37532133" vertical-offset="1042" max-vertical-offset="1593">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

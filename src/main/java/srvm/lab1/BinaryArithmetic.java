@@ -3,15 +3,22 @@ package srvm.lab1;
 public class BinaryArithmetic {
     public static BigNumber and(BigNumber a, BigNumber b) {
         BigNumber result = new BigNumber(a);
-        for (int i = 0; i < result.size(); i++) {
+        result.resize(a.size() > b.size() ? a.size() : b.size());
+        int i;
+        for (i = 0; i < b.size(); i++) {
             result.numbers[i] &= b.numbers[i];
+        }
+        for (; i < result.size(); i++) {
+            result.numbers[i] = 0;
         }
         return result;
     }
 
     public static BigNumber or(BigNumber a, BigNumber b) {
         BigNumber result = new BigNumber(a);
-        for (int i = 0; i < result.size(); i++) {
+        result.resize(a.size() > b.size() ? a.size() : b.size());
+        int i;
+        for (i = 0; i < b.size(); i++) {
             result.numbers[i] |= b.numbers[i];
         }
         return result;
@@ -19,7 +26,9 @@ public class BinaryArithmetic {
 
     public static BigNumber xor(BigNumber a, BigNumber b) {
         BigNumber result = new BigNumber(a);
-        for (int i = 0; i < result.size(); i++) {
+        result.resize(a.size() > b.size() ? a.size() : b.size());
+        int i;
+        for (i = 0; i < b.size(); i++) {
             result.numbers[i] ^= b.numbers[i];
         }
         return result;

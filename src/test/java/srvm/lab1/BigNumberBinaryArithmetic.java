@@ -26,18 +26,29 @@ public class BigNumberBinaryArithmetic {
         this.b = b;
     }
 
-    @Then("<a> and <b> is <c>")
-    public void thenAnd(@Named("a") BigNumber a, @Named("b") BigNumber b, @Named("c") BigNumber c) {
+    @Then("a and b is <c>")
+    public void thenAnd(@Named("c") BigNumber c) {
         Assert.assertEquals(and(a, b), c);
     }
 
-    @Then("<a> or <b> is <c>")
-    public void thenOr(@Named("a") BigNumber a, @Named("b") BigNumber b, @Named("c") BigNumber c) {
-        Assert.assertEquals(or(a, b), c);
+    @Then("a or b is <d>")
+    public void thenOr(@Named("d") BigNumber d) {
+        Assert.assertEquals(or(a, b), d);
     }
 
-    @Then("<a> xor <b> is <c>")
-    public void thenXor(@Named("a") BigNumber a, @Named("b") BigNumber b, @Named("c") BigNumber c) {
-        Assert.assertEquals(xor(a, b), c);
+    @Then("a xor b is <e>")
+    public void thenXor(@Named("e") BigNumber e) {
+        Assert.assertEquals(xor(a, b), e);
+    }
+
+    @Then("swap works")
+    public void swapWorks() {
+        BigNumber newA = a;
+        BigNumber newB = b;
+        newA = xor(newA, newB);
+        newB = xor(newA, newB);
+        newA = xor(newA, newB);
+        Assert.assertEquals(newA, b);
+        Assert.assertEquals(newB, a);
     }
 }
