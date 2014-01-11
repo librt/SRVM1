@@ -15,9 +15,9 @@ import java.util.List;
 
 import static org.jbehave.core.io.CodeLocations.codeLocationFromClass;
 
-public class SimpleJBehave extends JUnitStories {
+public class ArithmeticJBehave extends JUnitStories {
 
-    public SimpleJBehave() {
+    public ArithmeticJBehave() {
         super();
     }
 
@@ -36,15 +36,12 @@ public class SimpleJBehave extends JUnitStories {
 
     @Override
     public InjectableStepsFactory stepsFactory() {
-        return new InstanceStepsFactory(configuration(), new BigNumberInit(), new BigNumberBinaryArithmetic(), new BigNumberArithmetic());
+        return new InstanceStepsFactory(configuration(), new BigNumberArithmetic());
     }
 
     @Override
     protected List<String> storyPaths() {
-        List<String> stories = new StoryFinder().findPaths(codeLocationFromClass(this.getClass()).getPath(), "**/blank_big_number_init.story", "");
-        stories.addAll(new StoryFinder().findPaths(codeLocationFromClass(this.getClass()).getPath(), "**/big_number_init.story", ""));
-        stories.addAll(new StoryFinder().findPaths(codeLocationFromClass(this.getClass()).getPath(), "**/big_number_binary_arithmetic.story", ""));
-        return stories;
+        return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()).getPath(), "**/big_number_arithmetic.story", "");
     }
 
 }
