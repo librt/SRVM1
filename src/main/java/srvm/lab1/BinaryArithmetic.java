@@ -96,4 +96,28 @@ public class BinaryArithmetic {
         }
         return result;
     }
+
+    public static BigNumber inversion(BigNumber a) {
+        BigNumber result = new BigNumber(0, a.size());
+        for (int i = 0; i < result.size(); i++) {
+            result.numbers[i] = ~a.numbers[i];
+        }
+        return result;
+    }
+
+    public static long mostSignificantBit(BigNumber a) {
+        int i;
+        for (i = a.size() - 1; i >= 0; i--) {
+            if (a.numbers[i] != 0) break;
+        }
+        if (i == 0 && a.numbers[i] == 0) return 0;
+        long currentBit = (long) 1 << (Long.SIZE - 1);
+        for (int j = Long.SIZE - 1; j >= 0; j++) {
+            if ((a.numbers[i] & currentBit) != 0) {
+                return i * Long.SIZE + j;
+            }
+            currentBit >>>= 1;
+        }
+        return 0;
+    }
 }

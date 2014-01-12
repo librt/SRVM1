@@ -9,10 +9,12 @@ I want to perform a BigNumber arithmetic
 So that I can achieve further actions
 
 Scenario: scenario description
-Given big numbers <a> and <b>
-Then sum is <result>
+Given big numbers <a>, <b> and <c>
+Then a plus b is c
+And c minus a is b
+And c minus b is a
 Examples:
-|a|b|result|
+|a|b|c|
 |0|0|0|
 |0|1|1|
 |1|0|1|
