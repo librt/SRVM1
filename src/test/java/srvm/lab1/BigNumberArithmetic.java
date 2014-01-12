@@ -3,10 +3,7 @@ package srvm.lab1;
 import junit.framework.Assert;
 import org.jbehave.core.annotations.*;
 
-import java.util.logging.Logger;
-
-import static srvm.lab1.Arithmetic.minus;
-import static srvm.lab1.Arithmetic.plus;
+import static srvm.lab1.Arithmetic.*;
 
 public class BigNumberArithmetic {
     BigNumber a, b, c;
@@ -34,19 +31,21 @@ public class BigNumberArithmetic {
 
     @Then("a plus b is c")
     public void thenSum() {
-        Logger.getAnonymousLogger().info("b=" + b.toString());
         Assert.assertEquals(c, plus(a, b));
-        Logger.getAnonymousLogger().info("b=" + b.toString());
     }
 
     @Then("c minus a is b")
     public void thenMinusA() {
-        Logger.getAnonymousLogger().info("b=" + b.toString() + " minus=" + minus(c, a).toString());
         Assert.assertEquals(b, minus(c, a));
     }
 
     @Then("c minus b is a")
     public void thenMinusB() {
         Assert.assertEquals(a, minus(c, b));
+    }
+
+    @Then("a multiplied by b is c")
+    public void thenMultiplication() {
+        Assert.assertEquals(c, multiplication(a, b));
     }
 }

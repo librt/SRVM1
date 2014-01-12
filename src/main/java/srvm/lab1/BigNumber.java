@@ -53,6 +53,11 @@ public class BigNumber {
         return new BigNumber(array);
     }
 
+    public void setNull() {
+        for (int i = 0; i < size(); i++)
+            numbers[i] = 0;
+    }
+
     public void resize(int size) {
         if (size < 1) throw new IllegalArgumentException();
         if (size == this.size()) return;
@@ -86,6 +91,12 @@ public class BigNumber {
                 for (; i < maxSize; i++)
                     if (this.numbers[i] != 0)
                         return false;
+            }
+            return true;
+        } else if (obj.getClass() == Long.class || obj.getClass() == Integer.class) {
+            if (numbers[0] != (Long) obj) return false;
+            for (int i = 1; i < size(); i++) {
+                if (numbers[i] != 0) return false;
             }
             return true;
         } else {
@@ -144,16 +155,16 @@ public class BigNumber {
         int i;
         for (i = 0; i < result.length - 1; i++) {
             result[i] = Long.parseLong(input.substring(input.length() - i * BASE_SIZE - BASE_SIZE / 2, input.length() - i * BASE_SIZE), base);
-            result[i] |= (Long.parseLong(input.substring(input.length() - (i + 1) * BASE_SIZE, input.length() - i * BASE_SIZE - BASE_SIZE / 2), base)) << Long.SIZE / 2;
+            result[i] |= (Long.parseLong(input.substring(input.length() - (i + 1) * BASE_SIZE, input.length() - i * BASE_SIZE - BASE_SIZE / 2), base)) << (Long.SIZE / 2);
         }
         if (input.length() % BASE_SIZE > BASE_SIZE / 2) {
-            result[i] = Long.parseLong(input.substring(BASE_SIZE / 2, input.length() % BASE_SIZE), base);
-            result[i] |= Long.parseLong(input.substring(0, input.length() % BASE_SIZE / 2), base) << Long.SIZE / 2;
+            result[i] = Long.parseLong(input.substring(input.length() - BASE_SIZE / 2, input.length() % BASE_SIZE), base);
+            result[i] |= Long.parseLong(input.substring(0, input.length() - BASE_SIZE / 2), base) << (Long.SIZE / 2);
         } else if (input.length() % BASE_SIZE > 0) {
             result[i] = Long.parseLong(input.substring(0, input.length() % BASE_SIZE), base);
         } else {
             result[i] = Long.parseLong(input.substring(input.length() - i * BASE_SIZE - BASE_SIZE / 2, input.length() - i * BASE_SIZE), base);
-            result[i] |= (Long.parseLong(input.substring(input.length() - (i + 1) * BASE_SIZE, input.length() - i * BASE_SIZE - BASE_SIZE / 2), base)) << Long.SIZE / 2;
+            result[i] |= (Long.parseLong(input.substring(input.length() - (i + 1) * BASE_SIZE, input.length() - i * BASE_SIZE - BASE_SIZE / 2), base)) << (Long.SIZE / 2);
         }
         return result;
     }

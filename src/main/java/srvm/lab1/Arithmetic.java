@@ -1,6 +1,8 @@
 package srvm.lab1;
 
-import static srvm.lab1.BinaryArithmetic.inversion;
+import java.util.logging.Logger;
+
+import static srvm.lab1.BinaryArithmetic.*;
 
 public class Arithmetic {
     static final long LAST_BIT = (long) 1 << (Long.SIZE - 1);
@@ -35,4 +37,33 @@ public class Arithmetic {
         result.resize(a.size() > b.size() ? a.size() : b.size());
         return result;
     }
+
+    public static BigNumber getLowParts(final BigNumber a) {
+        BigNumber result = new BigNumber(0, a.size() * 2);
+        for (int i = 0; i < a.size(); i++) {
+            result.numbers[2 * i] = (a.numbers[i] << (Long.SIZE / 2)) >>> (Long.SIZE / 2);
+            result.numbers[2 * i + 1] = a.numbers[i] >>> (Long.SIZE / 2);
+            Logger.getAnonymousLogger().info("a=" + String.format("%X", a.numbers[i])
+                    + " resLow=" + String.format("%X", result.numbers[2 * i]) + " resHigh=" + String.format("%X", result.numbers[2 * i + 1]));
+        }
+        return result;
+    }
+
+    public static BigNumber multiplication(final BigNumber a, final BigNumber b) {
+        BigNumber result = new BigNumber(0, 1);
+        BigNumber multiplier = mostSignificantBit(a) > mostSignificantBit(b) ? b : a;
+        BigNumber temp = mostSignificantBit(a) > mostSignificantBit(b) ? a : b;
+        Logger.getAnonymousLogger().info("MSB(" + a.toString() + ")=" + mostSignificantBit(a)
+                + " MSB(" + b.toString() + ")=" + mostSignificantBit(b));
+        temp.resize(temp.size() + multiplier.size() + 1);
+        for (long i = mostSignificantBit(multiplier); i >= 0; i--) {
+            if (and(multiplier, new BigNumber(1)).equals(new BigNumber(1))) {
+                result = plus(result, temp);
+            }
+            temp = shiftLeft(temp);
+            multiplier = shiftRight(multiplier);
+        }
+        return result;
+    }
+
 }

@@ -27,6 +27,7 @@ Examples:
 |1|1|1|
 |1,0,0|3|1|
 |1,0,1|3|100000000000000000000000000000001|
+|9007199254740990|1|1FFFFFFFFFFFFE|
 Scenario: BigNumber initialization from string
 Given a big number from string <string>
 Then big number should be <number>

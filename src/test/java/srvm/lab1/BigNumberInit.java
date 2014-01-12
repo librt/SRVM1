@@ -73,8 +73,7 @@ public class BigNumberInit {
         a = new BigNumber(number);
     }
 
-    @Given("a big number $value")
-    @Alias("a big number <value>")
+    @Given("a big number <value>")
     public void givenBigNumber(@Named("value") BigNumber value) {
         a = value;
     }
@@ -84,8 +83,7 @@ public class BigNumberInit {
     public void whenNothingIsHappened() {
     }
 
-    @Then("big number size should be $size")
-    @Alias("big number size should be <size>")
+    @Then("big number size should be <size>")
     public void thenSizeShouldBe(@Named("size") int size) {
         Assert.assertEquals(size, a.size());
     }
@@ -100,8 +98,7 @@ public class BigNumberInit {
         Assert.assertNull(a);
     }
 
-    @Then("big number should be $number")
-    @Alias("big number should be <number>")
+    @Then("big number should be <number>")
     public void thenBigNumberShouldBe(@Named("number") String number) {
         Assert.assertEquals(number, a.toString());
     }

@@ -30,5 +30,7 @@ public class Main {
         a = new BigNumber(1);
         System.out.println(shiftLeft(a, 64) + " " + shiftLeft(a, 65) + " " + shiftLeft(a, 128));
         System.out.println(shiftRight(shiftLeft(a, 64), 64) + " " + shiftRight(shiftLeft(a, 65), 65) + " " + shiftRight(shiftLeft(a, 128), 128));
+        a = new BigNumber("0FFFFFFFFFFFFFFFF");
+        System.out.println(shiftLeft(a));
     }
 }
