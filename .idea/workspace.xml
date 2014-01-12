@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a256a1d4-d8f3-4152-a1a2-96cbb5ab264b" name="Default" comment="Добавлено сложение">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/srvm/lab1/Arithmetic.java" afterPath="$PROJECT_DIR$/src/main/java/srvm/lab1/Arithmetic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberArithmetic.java" afterPath="$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberArithmetic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/srvm/lab1/BinaryArithmetic.java" afterPath="$PROJECT_DIR$/src/main/java/srvm/lab1/BinaryArithmetic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_arithmetic.story" afterPath="$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_arithmetic.story" />
+    <list default="true" id="a256a1d4-d8f3-4152-a1a2-96cbb5ab264b" name="Default" comment="Добавлено вычитание">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInitJBehave.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/srvm/lab1/BinaryArithmeticJBehave.java" />
+      <change type="DELETED" beforePath="C:\Users\pti08\IdeaProjects\SRVM1\src\test\java\srvm\lab1\SimpleJBehave.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/srvm/lab1/ArithmeticJBehave.java" afterPath="$PROJECT_DIR$/src/test/java/srvm/lab1/ArithmeticJBehave.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SRVM1.iws" />
@@ -75,20 +75,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SimpleJBehave.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/SimpleJBehave.java">
+      <file leaf-file-name="BigNumberInitJBehave.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInitJBehave.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="1866" selection-end="1866" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1161">
+            <state line="11" column="5" selection-start="326" selection-end="326" vertical-scroll-proportion="0.53513515" vertical-offset="0" max-vertical-offset="555">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinaryArithmetic.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BinaryArithmetic.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/srvm/lab1/BinaryArithmetic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="37" selection-start="4197" selection-end="4197" vertical-scroll-proportion="1.0" vertical-offset="2816" max-vertical-offset="3483">
+            <state line="116" column="41" selection-start="4232" selection-end="4232" vertical-scroll-proportion="0.0" vertical-offset="2816" max-vertical-offset="3483">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JBehaveTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/JBehaveTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="23" selection-start="1422" selection-end="1422" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1296">
+              <folding>
+                <element signature="e#1550#1558#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,7 +107,7 @@
       <file leaf-file-name="big_number_arithmetic.story" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_arithmetic.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="9" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="837">
+            <state line="20" column="18" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="282" max-vertical-offset="837">
               <folding />
             </state>
           </provider>
@@ -105,7 +116,7 @@
       <file leaf-file-name="BigNumberArithmetic.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberArithmetic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="60" selection-start="947" selection-end="947" vertical-scroll-proportion="0.0" vertical-offset="751" max-vertical-offset="1404">
+            <state line="38" column="62" selection-start="951" selection-end="951" vertical-scroll-proportion="0.0" vertical-offset="751" max-vertical-offset="1404">
               <folding />
             </state>
           </provider>
@@ -123,7 +134,16 @@
       <file leaf-file-name="ArithmeticJBehave.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/ArithmeticJBehave.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="131" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0" vertical-offset="243" max-vertical-offset="1080">
+            <state line="11" column="5" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BinaryArithmeticJBehave.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BinaryArithmeticJBehave.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="5" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513">
               <folding />
             </state>
           </provider>
@@ -170,12 +190,15 @@
         <option value="$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java" />
         <option value="$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_binary_arithmetic.story" />
         <option value="$PROJECT_DIR$/src/test/java/srvm/lab1/ArighmeticJBehave.java" />
-        <option value="$PROJECT_DIR$/src/test/java/srvm/lab1/ArithmeticJBehave.java" />
         <option value="$PROJECT_DIR$/src/test/java/srvm/lab1/SimpleJBehave.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_arithmetic.story" />
         <option value="$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberArithmetic.java" />
         <option value="$PROJECT_DIR$/src/main/java/srvm/lab1/Arithmetic.java" />
         <option value="$PROJECT_DIR$/src/main/java/srvm/lab1/BinaryArithmetic.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_arithmetic.story" />
+        <option value="$PROJECT_DIR$/src/test/java/srvm/lab1/JBehaveTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/srvm/lab1/ArithmeticJBehave.java" />
+        <option value="$PROJECT_DIR$/src/test/java/srvm/lab1/BinaryArithmeticJBehave.java" />
+        <option value="$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInitJBehave.java" />
       </list>
     </option>
   </component>
@@ -437,7 +460,7 @@
       <recent name="C:\Users\pti08\IdeaProjects\SRVM1\src\srvm\lab1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ArithmeticJBehave">
+  <component name="RunManager" selected="JUnit.BigNumberInitJBehave">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="srvm.lab1.Main" />
@@ -489,6 +512,50 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="srvm.lab1" />
       <option name="MAIN_CLASS_NAME" value="srvm.lab1.ArithmeticJBehave" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BinaryArithmeticJBehave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SRVM1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="srvm.lab1" />
+      <option name="MAIN_CLASS_NAME" value="srvm.lab1.BinaryArithmeticJBehave" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BigNumberInitJBehave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SRVM1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="srvm.lab1" />
+      <option name="MAIN_CLASS_NAME" value="srvm.lab1.BigNumberInitJBehave" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -645,17 +712,21 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
       <item index="1" class="java.lang.String" itemvalue="Application.Main" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.SimpleJBehave" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.ArithmeticJBehave" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BinaryArithmeticJBehave" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.BigNumberInitJBehave" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ArithmeticJBehave" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.SimpleJBehave" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Main" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BigNumberInitJBehave" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BinaryArithmeticJBehave" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ArithmeticJBehave" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SimpleJBehave" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -832,7 +903,15 @@
       <created>1389471706203</created>
       <updated>1389471706203</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Добавлено вычитание">
+      <created>1389544426245</created>
+      <updated>1389544426245</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Создан базовый класс тестов">
+      <created>1389546295904</created>
+      <updated>1389546295904</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -876,7 +955,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23791541" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42276424" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42276424" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -896,8 +975,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Добавлена поддержка Maven, теперь результат работы JBehave в HTML формате красивый" />
-    <MESSAGE value="Реструктуризация" />
     <MESSAGE value="Удалён конструктор с указанием размера из-за неоднозначности" />
     <MESSAGE value="Удалён конструктор с указанием размера из-за неоднозначности (может быть путаница с конструктором присваивания маленького числа типа long)" />
     <MESSAGE value="Немного больше тестов" />
@@ -921,7 +998,9 @@
     <MESSAGE value="Добавлены тесты на побитовый сдвиг влево" />
     <MESSAGE value="Добавлены тесты на побитовый сдвиг вправо" />
     <MESSAGE value="Добавлено сложение" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлено сложение" />
+    <MESSAGE value="Добавлено вычитание" />
+    <MESSAGE value="Создан базовый класс тестов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создан базовый класс тестов" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -933,34 +1012,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/SimpleJBehave.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="0" selection-start="3432" selection-end="3432" vertical-scroll-proportion="0.0" vertical-offset="2160" max-vertical-offset="2403">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/srvm/lab1/BigNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="14" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" vertical-offset="297" max-vertical-offset="999">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="21" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="945">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/SimpleJBehave.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="0" selection-start="3432" selection-end="3432" vertical-scroll-proportion="0.0" vertical-offset="2160" max-vertical-offset="2403">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/srvm/lab1/BigNumber.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="14" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="999">
@@ -971,13 +1022,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="21" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="945">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/SimpleJBehave.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="0" selection-start="3432" selection-end="3432" vertical-scroll-proportion="0.0" vertical-offset="2160" max-vertical-offset="2403">
           <folding />
         </state>
       </provider>
@@ -1200,23 +1244,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/ArithmeticJBehave.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberArithmetic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="131" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
+        <state line="38" column="62" selection-start="951" selection-end="951" vertical-scroll-proportion="0.0" vertical-offset="751" max-vertical-offset="1404">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/srvm/lab1/big_number_arithmetic.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="9" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="837">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberArithmetic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="60" selection-start="947" selection-end="947" vertical-scroll-proportion="0.0" vertical-offset="751" max-vertical-offset="1404">
+        <state line="20" column="18" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="837">
           <folding />
         </state>
       </provider>
@@ -1228,16 +1265,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/SimpleJBehave.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/srvm/lab1/BinaryArithmetic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1866" selection-end="1866" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1161">
+        <state line="116" column="41" selection-start="4232" selection-end="4232" vertical-scroll-proportion="0.0" vertical-offset="2816" max-vertical-offset="3483">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/srvm/lab1/BinaryArithmetic.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/JBehaveTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="37" selection-start="4197" selection-end="4197" vertical-scroll-proportion="1.0" vertical-offset="2816" max-vertical-offset="3483">
+        <state line="39" column="23" selection-start="1422" selection-end="1422" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1296">
+          <folding>
+            <element signature="e#1550#1558#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/ArithmeticJBehave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="5" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BinaryArithmeticJBehave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="5" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/srvm/lab1/BigNumberInitJBehave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="5" selection-start="326" selection-end="326" vertical-scroll-proportion="0.53513515" vertical-offset="0" max-vertical-offset="555">
           <folding />
         </state>
       </provider>
