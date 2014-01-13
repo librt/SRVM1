@@ -158,8 +158,10 @@ public class BigNumber {
             result[i] |= (Long.parseLong(input.substring(input.length() - (i + 1) * BASE_SIZE, input.length() - i * BASE_SIZE - BASE_SIZE / 2), base)) << (Long.SIZE / 2);
         }
         if (input.length() % BASE_SIZE > BASE_SIZE / 2) {
-            result[i] = Long.parseLong(input.substring(input.length() - BASE_SIZE / 2, input.length() % BASE_SIZE), base);
-            result[i] |= Long.parseLong(input.substring(0, input.length() - BASE_SIZE / 2), base) << (Long.SIZE / 2);
+            int right = input.length() % BASE_SIZE;
+            int left = right - BASE_SIZE / 2;
+            result[i] = Long.parseLong(input.substring(left, right), base);
+            result[i] |= Long.parseLong(input.substring(0, left), base) << (Long.SIZE / 2);
         } else if (input.length() % BASE_SIZE > 0) {
             result[i] = Long.parseLong(input.substring(0, input.length() % BASE_SIZE), base);
         } else {

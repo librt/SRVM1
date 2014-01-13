@@ -1,6 +1,7 @@
 package srvm.lab1;
 
 import static srvm.lab1.BinaryArithmetic.*;
+import static srvm.lab1.ModularArithmetic.powerByMod;
 
 public class Main {
 
@@ -34,5 +35,6 @@ public class Main {
         System.out.println(shiftRight(a, 1));
         a = new BigNumber("0FFFFFFFFFFFFFFFF");
         System.out.println(shiftLeft(a));
+        System.out.println(powerByMod(new BigNumber("11D8FDB13747A7B184016450536BEFE66763ECFB3B38E749EDA9BC56364FD2D0"), new BigNumber("9B13AF897553FC9D606B864576045410ADECA1C542F4310601874E53DAB876F4"), new BigNumber("35FB52F3435C2D7BD5EAC5F9B478971B7D7D24B95A8F4C6FD974CA2A2D9211E")) + "=" + new BigNumber("22AC57D9B087FD38617AC517B56BFCA2C59F57E2084DDAA48B191C199E2BC6A"));
     }
 }

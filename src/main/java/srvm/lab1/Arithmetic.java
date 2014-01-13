@@ -71,25 +71,24 @@ public class Arithmetic {
         BigNumber divider = new BigNumber(b);
         BigNumber result = new BigNumber(0, a.size());
         divider.resize(a.size());
-        Logger.getAnonymousLogger().info("divider=" + divider.toString() + ",b=" + b.toString());
         int iterations = mostSignificantBit(dividend) - mostSignificantBit(divider);
-        Logger.getAnonymousLogger().info("Dividend=" + dividend.toString() + " divider=" + divider.toString());
-        Logger.getAnonymousLogger().info("msb(Dividend)=" + mostSignificantBit(dividend)
-                + " msb(Divider)=" + mostSignificantBit(divider));
-        Logger.getAnonymousLogger().info("Iterations=" + iterations);
         divider = shiftLeft(divider, iterations);
-        Logger.getAnonymousLogger().info(mostSignificantBit(dividend) + "==" + mostSignificantBit(divider));
+        //Logger.getAnonymousLogger().info(mostSignificantBit(dividend) + "==" + mostSignificantBit(divider));
         while (true) {
             result = shiftLeft(result);
             if (!dividend.lessThan(divider)) {
                 dividend = minus(dividend, divider);
                 result = or(result, new BigNumber(1));
             }
-            Logger.getAnonymousLogger().info("Divider=" + divider);
+            //Logger.getAnonymousLogger().info("Divider=" + divider);
             if (divider.equals(b)) break;
             divider = shiftRight(divider);
         }
-        Logger.getAnonymousLogger().info("Result is " + result.toString());
+        //Logger.getAnonymousLogger().info("Result is " + result.toString());
         return result;
+    }
+
+    public static BigNumber mod(BigNumber a, BigNumber b) {
+        return minus(a, multiplication(b, division(a, b)));
     }
 }
