@@ -53,10 +53,8 @@ public class Arithmetic {
         BigNumber result = new BigNumber(0, 1);
         BigNumber multiplier = mostSignificantBit(a) > mostSignificantBit(b) ? b : a;
         BigNumber temp = mostSignificantBit(a) > mostSignificantBit(b) ? a : b;
-        Logger.getAnonymousLogger().info("MSB(" + a.toString() + ")=" + mostSignificantBit(a)
-                + " MSB(" + b.toString() + ")=" + mostSignificantBit(b));
         temp.resize(temp.size() + multiplier.size() + 1);
-        for (long i = mostSignificantBit(multiplier); i >= 0; i--) {
+        for (int i = mostSignificantBit(multiplier); i >= 0; i--) {
             if (and(multiplier, new BigNumber(1)).equals(new BigNumber(1))) {
                 result = plus(result, temp);
             }
@@ -66,4 +64,32 @@ public class Arithmetic {
         return result;
     }
 
+    public static BigNumber division(final BigNumber a, final BigNumber b) {
+        if (a.lessThan(b)) return new BigNumber(0);
+        if (a.equals(b)) return new BigNumber(1);
+        BigNumber dividend = new BigNumber(a);
+        BigNumber divider = new BigNumber(b);
+        BigNumber result = new BigNumber(0, a.size());
+        divider.resize(a.size());
+        Logger.getAnonymousLogger().info("divider=" + divider.toString() + ",b=" + b.toString());
+        int iterations = mostSignificantBit(dividend) - mostSignificantBit(divider);
+        Logger.getAnonymousLogger().info("Dividend=" + dividend.toString() + " divider=" + divider.toString());
+        Logger.getAnonymousLogger().info("msb(Dividend)=" + mostSignificantBit(dividend)
+                + " msb(Divider)=" + mostSignificantBit(divider));
+        Logger.getAnonymousLogger().info("Iterations=" + iterations);
+        divider = shiftLeft(divider, iterations);
+        Logger.getAnonymousLogger().info(mostSignificantBit(dividend) + "==" + mostSignificantBit(divider));
+        while (true) {
+            result = shiftLeft(result);
+            if (!dividend.lessThan(divider)) {
+                dividend = minus(dividend, divider);
+                result = or(result, new BigNumber(1));
+            }
+            Logger.getAnonymousLogger().info("Divider=" + divider);
+            if (divider.equals(b)) break;
+            divider = shiftRight(divider);
+        }
+        Logger.getAnonymousLogger().info("Result is " + result.toString());
+        return result;
+    }
 }

@@ -48,4 +48,14 @@ public class BigNumberArithmetic {
     public void thenMultiplication() {
         Assert.assertEquals(c, multiplication(a, b));
     }
+
+    @Then("c divided by b is a")
+    public void thenDivisionByB() {
+        Assert.assertEquals(a, division(c, b));
+    }
+
+    @Then("c divided by a is b")
+    public void thenDivisionByA() {
+        Assert.assertEquals(b, division(c, a));
+    }
 }

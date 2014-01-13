@@ -168,4 +168,27 @@ public class BigNumber {
         }
         return result;
     }
+
+    public boolean biggerThan(final BigNumber a) {
+        int i;
+        if (size() > a.size()) {
+            for (i = size() - 1; i >= a.size(); i--) {
+                if (numbers[i] != 0) return true;
+            }
+        } else {
+            for (i = a.size() - 1; i >= size(); i--) {
+                if (a.numbers[i] != 0) return false;
+            }
+        }
+        for (; i >= 0; i--) {
+            if (numbers[i] < 0 && a.numbers[i] >= 0) return true;
+            else if (numbers[i] >= 0 && a.numbers[i] < 0) return false;
+            else if (numbers[i] != a.numbers[i]) return numbers[i] > a.numbers[i];
+        }
+        return false;
+    }
+
+    public boolean lessThan(BigNumber a) {
+        return !(this.equals(a) || this.biggerThan(a));
+    }
 }

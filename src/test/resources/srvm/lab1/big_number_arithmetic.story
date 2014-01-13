@@ -29,11 +29,10 @@ Examples:
 Scenario: multiplication
 Given big numbers <a>, <b> and <c>
 Then a multiplied by b is c
+And c divided by a is b
+And c divided by b is a
 Examples:
 |a|b|c|
-|0|0|0|
-|0|1|0|
-|1|0|0|
 |1|1|1|
 |FFFFFFFFFFFFFFFF|1|FFFFFFFFFFFFFFFF|
 |FFFFFFFFFFFFF|2|1FFFFFFFFFFFFE|
